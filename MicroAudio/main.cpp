@@ -1,8 +1,12 @@
 #include "MainWindow.h"
+#include "Audio.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
     MainWindow mainWindow(hInstance, nCmdShow);
+    Audio      audio;
+
+    audio.InputList();
 
     if (!mainWindow.Create())
     {

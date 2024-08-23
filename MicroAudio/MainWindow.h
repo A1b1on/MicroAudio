@@ -17,5 +17,10 @@ private:
 
     HINSTANCE hInstance_;
     HWND hwnd_;
+    HWND hComboBox_;
+    HWND hEditBox_;
+    HWND hFileButton_;
+    HWND hPlayButton_;
+    HWND hListBox_;
     const wchar_t* className_ = L"MainWindowClass";
 };
